@@ -1,0 +1,41 @@
+#site-footer {
+    padding: 20px 0;
+    font-weight: 400;
+    font-size: $fontSmall;
+    color: $primaryColorDarker;
+    border-top: 1px solid $primaryColor;
+    position: relative;
+    z-index: 1;
+}
+
+.hireme {
+    position: absolute;
+    left: 50%;
+    top: -240px;
+    @include breakpoint(mobileonly) {
+        left: 15%;
+    }
+    img {
+        width: 200px;
+        // animation: moving 30s infinite;
+        // transform-origin: bottom center;
+    }
+    .availability {
+        left: auto;
+        right: 110px;
+        top: 140px;
+        width: 110px;
+        text-align: right;
+    }
+    span {
+        position: absolute;
+        width: 130px;
+        font-family: monospace;
+        font-weight: 400;
+        top: 125px;
+        left: 125px;
+        text-align: center;
+        transform: rotate(-13deg);
+        line-height: 1.3;
+    }
+}

@@ -1,0 +1,58 @@
+//Caricature
+@keyframes moving {
+    0%   { transform: rotate(5deg); }
+    50%   { transform: rotate(-5deg); }
+    100%   { transform: rotate(5deg); }
+}
+
+@keyframes steaming {
+    0%      { opacity: 0}
+    25%     { opacity: 0; top:-50px }
+    50%     { opacity: .8; top:-100px; transform: scale(.8) }
+    75%     { opacity: 0; top:-150px; transform: scale(1) }
+    0%      { opacity: 0}
+}
+
+.caricature {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0.85);
+    @include breakpoint(mobileonly) {
+        right: -70px;
+        transform: scale(0.85);
+	}
+    .figure {
+        position: absolute;
+    }
+    .arm {
+        right: 140px;
+        top: 163px;
+        transform-origin: top right;
+        animation: moving 10s infinite;
+        img.arm-img {
+            width: 63px;
+        }
+    }
+    .body {
+        right: 0;
+        top: 170px;
+        height: 200px;
+    }
+    .head {
+        width: 106px;
+        right: 69px;
+        transform-origin: bottom center;
+        animation: moving 15s infinite;
+    }
+    .steam {
+        transform: scale(.5);
+        right: 0;
+        top: -80px;
+        opacity: 0;
+        position: absolute;
+        animation: steaming 10s infinite;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+    }
+}

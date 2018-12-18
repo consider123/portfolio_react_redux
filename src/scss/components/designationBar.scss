@@ -1,0 +1,20 @@
+.designationBar {
+    margin-top: -18px;
+    line-height: 0.9;
+    font-size: 3rem;
+    color: $primaryColor;
+    .copy { 
+        margin: 10px 0;
+        padding: 0 10px;
+    }
+    .left {
+        text-align: right;
+        border-right: 1px solid $primaryColor;
+        &.left-xs {
+          font-size: 6.2rem;  
+        }
+    }
+    .right {
+        font-weight: 300;
+    }
+}

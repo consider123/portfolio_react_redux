@@ -1,0 +1,16 @@
+.mui-tabs__bar>li.mui--is-active{
+    border-bottom-color: $primaryColorDarker; 
+    &>a {
+        color: $primaryColorDarker;
+    }
+}
+
+.mui-tabs__bar.mui-tabs__bar--justified>li:not(.mui--is-active) {
+    @extend .hvr-underline-from-center;
+    a {
+        cursor: pointer;
+        &:hover {
+            color: $primaryColorDarker;
+        }
+    }
+}

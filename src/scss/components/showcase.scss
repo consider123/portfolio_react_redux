@@ -1,0 +1,95 @@
+#showcaseSection {
+    .thumbs {
+        padding-top: 150px;
+        @include breakpoint(mobileonly) {
+            padding-top: $defaultGap*2;
+            margin: 0;
+        }
+        .showcase-thumb {
+            @include breakpoint(mobileonly) {
+                margin-bottom: 0;
+            }
+            &:nth-child(odd) {
+                margin-top: -100px;
+                @include breakpoint(mobileonly) {
+                    margin-top: $defaultGap;
+                }
+            }  
+        }
+    }
+
+    .showcase-thumb {
+        img {
+            transition: .5s;
+        }
+        .thumb-wrapper {
+            position: relative;
+            overflow: hidden;
+            .overlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: .5s;
+                background: $darkColor;
+                border-radius: 0;                
+                color: $lightColor;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include breakpoint(mobileonly) {
+                    line-height: 1;
+                }
+                .content {
+                    text-align: center;
+                    max-width: 80%;
+                    transform: scale(1.2);
+                    transition: .5s;
+                    h2 {
+                        margin-top: 0;
+                        line-height: 1;
+                    }
+                    button {
+                        color: $lightColor;
+                        padding: 5px $defaultGap*2;
+                        border: 1px solid $lightColor;
+                        border-radius: 5px;
+                        background: none;
+                        margin-top: 10px;
+                        font-size: $fontSmall;
+                        position: relative;
+                        cursor: pointer;
+                        &:after {
+                            font-family: 'Material Icons';
+                            content: '\E315';
+                            display: inline-block;
+                            margin-left: -1.3em;
+                            width: 1.3em;
+                            position: absolute;
+                            top: 5px;
+                            right: 10px;
+                            font-size: 16px;
+                        }
+                        &:hover {
+                            background: $lightColor;
+                            color: $darkColor;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+            .overlay {
+                opacity: 1;
+                .content {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}

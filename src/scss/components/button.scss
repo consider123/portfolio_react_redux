@@ -1,0 +1,23 @@
+.mui-btn {
+    &--primary {
+        color: $darkColor;
+        background-color: $primaryColor;
+        &:hover {
+            background-color: $primaryColorDark;
+        }
+        &.mui-btn--flat {
+            color: $primaryColorDark;
+        }
+    }
+    &.back-btn {
+        padding: 0 30px;
+        &:before {
+            content: '\e314';
+            font-family: 'Material Icons';
+            position: absolute;
+            top: 0;
+            left: 10px;
+        }
+    }
+    
+}

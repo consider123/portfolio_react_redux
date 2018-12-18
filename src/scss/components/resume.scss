@@ -1,0 +1,156 @@
+#resumeSection {
+    .section {
+        margin-bottom: 50px;
+    }
+
+    .intro {
+        i.material-icons {
+            margin-top: 2px;
+        }
+    }
+    
+    // skills
+    .cols-wrapper{
+        display: table;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .skills-col {
+        display: table-cell;
+        float: inherit;
+        border: 1px solid lighten($supportingColor1, 35);
+        &.dev-col {
+            background-color: darken($primaryColorLight,3);
+        }
+        &.ui-col {
+            // background-color: darken($primaryColorLight,3);
+            
+        }
+        &.ux-col {
+            // background-color: darken($primaryColorLight,5);
+        }
+        hr {
+            margin: 0;
+            border-bottom: 2px solid $primaryColorDark;
+        }
+        .skills-header {
+            text-align: center;
+            img {
+                margin-top: 15px;
+                width: 80px;
+                @include breakpoint(mobileonly) {
+                    width: 60px;
+                }
+            }
+            h3 {
+                margin: 0 0 10px 0;
+                color: $primaryColorDarker;
+            }
+        }
+        .tools-list {
+            list-style: none;
+            padding: 0;
+            margin: $defaultGap 0;
+            text-align: center;
+            li {
+                padding: 10px 5px;
+                display: inline-block;    
+                & > div {
+                    text-align: center;
+                    &.caption {
+                        font-weight: 400;
+                        font-size: $fontSmall;
+                        word-break: break-word;
+                        background-color: $primaryColorDark;
+                        padding: 0 5px;
+                        border-radius: 3px;
+                        color: $primaryColorLight;
+                        margin-top: 5px;
+                    }
+                }
+                img {
+                    width: auto;
+                    height: 50px;
+                    margin-bottom: -6px;
+                }
+            }
+        }
+    }
+
+    // experience 
+    .experience-list, .education-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            border-left: 1px solid $primaryColorDarker;
+            padding-left: $defaultGap;
+            margin: $defaultGap*2 0;
+            a:hover {
+                text-decoration: none;
+            }
+            .title {
+                margin-top: 0;
+                color: $primaryColorDarker;
+                a:hover, a:focus, a:active {
+                    text-decoration: none;
+                }
+            }
+            .desc {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .tabs {
+        display: none;
+        height: 49px;
+        position: relative;
+        @include breakpoint (mobileonly) {
+            display: block;
+        }
+        ul.mui-tabs__bar {
+            text-align: center;
+            li {
+                a {
+                    font-size: 1.2rem;
+                    padding: 0 10px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    ul.resume-nav {
+        margin-top: 20px;
+        @extend .custom;
+        &.sticky {
+            position: fixed;
+            top: 50px;
+        }
+        li {
+            font-size: $fontLarge;
+            color: $primaryColorDark;
+            transition: .3s;
+            border-radius: 2px;
+            &:before {
+                top: 2px;
+            }
+            &:hover, &:focus, &:active, &.active {
+                background-image: linear-gradient( 90deg, $primaryColorLight 70%, lighten($supportingColor1, 35) 100%);
+                margin-left: 5px;
+                border-left: 2px solid $primaryColorDark;
+                a {text-decoration:none;}
+            }
+            a, a:hover {
+                text-decoration: none;
+            }
+        }
+    
+        // @for $i from 1 through 4 {
+        //     li:nth-child(#{$i}) {
+        //         background-color: lighten($primaryColor, $i*3)
+        //     }
+        // }
+    }
+
+}

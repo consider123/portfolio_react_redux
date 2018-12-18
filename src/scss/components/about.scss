@@ -1,0 +1,8 @@
+#aboutSection {
+    .desc {
+        line-height: 120%;
+        @include breakpoint (mobileonly) {
+            font-size: $fontBase;
+        }
+    }
+}

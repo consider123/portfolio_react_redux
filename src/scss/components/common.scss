@@ -1,0 +1,160 @@
+.section-sep {
+    .clip-top {
+        width: 100%;
+        height: 100px;
+        background: $primaryColorLight;
+        clip-path: polygon(0 0, 100% 70px, 100% 100%, 0 100%);
+    }
+    .title-img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        text-align: right;
+        margin-bottom: -200px;
+        @include breakpoint(mobileonly) { 
+            text-align: center;
+            margin: 0;
+            margin-bottom: -125px;
+        }
+        img {
+            width: auto;
+            height: 160px;
+            @include breakpoint(mobileonly) { display: none; }
+            &.mobile-img {
+                display: none;
+                @include breakpoint(mobileonly) {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    &.showcase-sep {
+        .title-img {
+            margin-bottom: -194px;
+            @include breakpoint(mobileonly) {
+                margin-bottom: -125px;
+            }
+        }
+    }
+    &.resume-sep {
+        margin-top: -35px;
+        @include breakpoint(mobileonly) {
+            margin-top: -117px;
+        }
+        .clip-top {
+            background-color: lighten($supportingColor1, 35);
+        }
+    }
+}
+
+.section-wrapper {
+    padding: 20px 0;  
+    &.about {
+        padding: 70px 0 80px;
+        @include breakpoint(mobileonly) {
+            padding: 50px 0;
+        }
+    }
+    &.showcase {
+        background-color: $primaryColorLight;
+        position: relative;
+        padding-bottom: 100px;
+        @include breakpoint(mobileonly) {
+            padding-bottom: 200px;
+        }
+        .thumbs-bg {
+            position: absolute;
+            top: 300px;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(0deg, $primaryColorLight, $primaryColor);
+            clip-path: polygon(0 0, 100% 70px, 100% 100%, 0 95%);
+        }
+        
+    }
+    &.resume {
+        background-color: lighten($supportingColor1, 35);
+        padding-bottom: 300px;
+        @include breakpoint(mobileonly) {
+            
+        }
+    }
+    h1.title {
+        font-size: $fontXlarge;
+        font-weight: 300;
+        font-style: italic;
+    }
+    hr.sep {
+        margin-top: -12px;
+        border-bottom: .5px solid;
+        width: 200%;
+    }
+}
+
+ul.custom {
+    list-style: none;
+    padding: 0;
+    li {
+        padding-left: 1.3em;
+        position: relative;
+        &:before {
+            font-family: 'Material Icons';
+            content: '\e315';
+            display: inline-block;
+            margin-left: -1.3em;
+            width: 1.3em;
+            position: absolute;
+            top: 0;
+        }
+    }
+}
+
+ul.sectors {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    li {
+        text-transform: uppercase;
+        float: left;
+        padding: 3px 5px;
+        color: $darkColor;
+        background-color: $lightColor;
+        border-radius: 3px;
+        margin-left: 5px;
+        font-size: $fontXSmall;
+        font-weight: 700;
+        // margin-top: 2px;
+    }
+}
+
+#showcaseSection, #resumeSection {
+    .tabs {
+        // height: 80px;
+        @include breakpoint(mobileonly) {
+            margin: 0 -$defaultGap;
+        }
+        .mui-tabs__bar.sticky {
+            top: 57px;
+            left: 0;
+            position: fixed;
+            width: 100%;
+            background: $lightColor;
+            z-index: 1;
+            box-shadow: 0 0 5px;
+            & ~ .mui-tabs__pane {
+                margin-top: 80px;
+            }
+        }
+    }
+    .mui-tabs__pane:first-child {
+        position: relative;
+        display: none;
+        &:after {
+            content: 'Code enables you to do beautiful things';
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
