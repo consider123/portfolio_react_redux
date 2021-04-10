@@ -31,6 +31,8 @@ import react from './images/tools/react.png';
 import redux from './images/tools/redux.png';
 import sass from './images/tools/sass.png';
 import sketch from './images/tools/sketch.png';
+import ts from './images/tools/typescript.png';
+import uxpin from './images/tools/uxpin.png';
 import vue from './images/tools/vue.png';
 import webpack from './images/tools/webpack.png';
 import whiteboard from './images/tools/whiteboard.png';
@@ -71,6 +73,8 @@ export {
     redux,
     sass,
     sketch,
+    ts,
+    uxpin,
     vue,
     webpack,
     whiteboard,

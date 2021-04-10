@@ -55,7 +55,7 @@ class Showcase extends Component {
 
                         <p className="textCenter marTop marBottomTwice">Some of the examples of my recent work across the 3 diciplines can be seen below</p>
 
-                        <Tabs className="tabs marTopTwice" onChange={this.onTabChange} defaultSelectedIndex={0} justified={true}>
+                        <Tabs className="tabs marTopTwice" onChange={this.onTabChange} defaultSelectedIndex={1} justified={true}>
                             {this.props.tabs.map((tab, i) => (
                                 <Tab key={i} value={`pane-${i+1}`} label={tab.caption} onActive={this.onTabActive.bind(this)}>
                                 <Row className="thumbs">

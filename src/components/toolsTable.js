@@ -8,7 +8,7 @@ import uxIcon from '../images/ux_icon.png';
 export default function ToolsTable({toolsList}) {
     return (
         <React.Fragment>
-            <Col xs="3" className="skills-col ux-col noPad">
+            <Col xs="4" className="skills-col ux-col noPad">
                 <div className="skills-header">
                     <img alt="UX" src={uxIcon} />
                     <h3>UX</h3>
@@ -26,7 +26,7 @@ export default function ToolsTable({toolsList}) {
                     
                 </ul>
             </Col>
-            <Col xs="6" className="skills-col dev-col noPad">
+            <Col xs="4" className="skills-col dev-col noPad">
                 <div className="skills-header">
                     <img alt="FED" src={fedIcon} />
                     <h3>FED</h3>
@@ -44,7 +44,7 @@ export default function ToolsTable({toolsList}) {
                     
                 </ul>
             </Col>
-            <Col xs="3" className="skills-col ui-col noPad">
+            <Col xs="4" className="skills-col ui-col noPad">
                 <div className="skills-header">
                     <img alt="UI" src={uiIcon} />
                     <h3>UI</h3>

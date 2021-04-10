@@ -46,7 +46,7 @@ export default function Header({sticky}) {
                 <Row>
                     <Col xs="8">
                         <h3 id="site-title" className="animated fadeIn">ALWAYS AWAIS</h3>
-                        <div className="designation animated flipInX" title="Front-end Developer - UX Designer - UI Designer">FRONT-END DEV<br/>UX/UI DESIGNER</div>
+                        <div className="designation animated flipInX" title="UX Designer - UI Designer - Font-end Developer">UX/UI DESIGNER<br/>UI DEVELOPER</div>
                     </Col>
                     <Col xs="4" className="relative">
                         <div className={`workDesk animated fadeInRight ${classes.workDesk}`}></div>

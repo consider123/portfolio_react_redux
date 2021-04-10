@@ -27,9 +27,9 @@ export default function ResumeAbout(props) {
             <p>I come with a vast experience leveraging modern UI design tools and JavaScript to prototype/design/build responsive websites, mobile apps, and interactive features that drive business growth and improve user experience.</p> 
             <h3 className="highlightColor clr">At a glance </h3>
             <ul className="custom">
-                <li><b>Hybrid Designer/Developer</b>&nbsp;:&nbsp;<span>Front-end developer with hands on experience of UI/UX design</span></li>
+                <li><b>Hybrid Designer/Developer</b>&nbsp;:&nbsp;<span>UX/UI Designer with hands on experience of Front-end Development</span></li>
                 <li><b>Rapid Development (Scrum) </b> / <b>Linear (Waterfall) </b> work ethic experience</li>
-                <li><b>13+ years</b>&nbsp;<span>agency and industry experience</span></li>
+                <li><b>15+ years</b>&nbsp;<span>agency and industry experience</span></li>
                 <li><b>Masters degree</b>&nbsp;:&nbsp;<span>New media Art & Design</span></li>
                 <li><b>First degree</b>&nbsp;:&nbsp;<span>Computer Sciences (BCS)</span></li>
             </ul>
