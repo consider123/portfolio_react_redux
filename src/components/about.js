@@ -10,7 +10,7 @@ export default function About () {
                 <Row>
                     <Col xs="12" className="textCenter">
                         <h1 className="heading noMargin"><span role="img" aria-label="Hello!">👋🏽</span> Hi! I'm Awais,</h1>
-                        <p className="desc marTop sizeMedium">I'm a <b>Digital Experience Designer</b> / <b>Creative UI Developer</b>. I help gather business and user requirements and translate them into prototypes, design visually aesthetic user interfaces and convert them into responsive and interactive web apps using modern Javascript frameworks and libraries.</p>
+                        <p className="desc marTop sizeMedium">I'm a <b>Digital Experience Designer</b> / <b>Creative UI Developer</b>. <br/>I help gather business and user requirements and translate them into prototypes, design visually aesthetic user interfaces and convert them into responsive and interactive web apps using modern Javascript frameworks and libraries.</p>
                     </Col>
                 </Row>
             </Container>

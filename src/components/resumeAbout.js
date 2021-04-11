@@ -23,12 +23,12 @@ export default function ResumeAbout(props) {
                 </li>
             </ul>
             {/* <h2>Awais Waheed • London • <a href="mailto:awais@alwaysawais.com" target="_blank" rel="noopener noreferrer">awais@alwaysawais.com</a></h2> */}
-            <p>My skill set offers to solution a digital product development lifecycle highlighting the process of research, strategy, prototyping, visual design and front-end development.</p>
+            <p>My skill set offers to facilitate a digital product development lifecycle highlighting the process of research, strategy, prototyping, visual design and front-end development.</p>
             <p>I come with a vast experience leveraging modern UI design tools and JavaScript to prototype/design/build responsive websites, mobile apps, and interactive features that drive business growth and improve user experience.</p> 
             <h3 className="highlightColor clr">At a glance </h3>
             <ul className="custom">
                 <li><b>Hybrid Designer/Developer</b>&nbsp;:&nbsp;<span>UX/UI Designer with hands on experience of Front-end Development</span></li>
-                <li><b>Rapid Development (Scrum) </b> / <b>Linear (Waterfall) </b> work ethic experience</li>
+                <li><b>Rapid Development (Scrum/Kanban)</b> / <b>Linear (Waterfall) </b> work ethic experience</li>
                 <li><b>15+ years</b>&nbsp;<span>agency and industry experience</span></li>
                 <li><b>Masters degree</b>&nbsp;:&nbsp;<span>New media Art & Design</span></li>
                 <li><b>First degree</b>&nbsp;:&nbsp;<span>Computer Sciences (BCS)</span></li>

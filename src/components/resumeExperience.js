@@ -14,8 +14,8 @@ export default function ResumeExperience(props) {
             {/* <p>Below are some of the places where I've rendered my services as a contrator as well as a permanent employee.</p> */}
             <ul className="experience-list">
                 <li>
-                    <a href="https://www.sainsburys.co.uk" target="_blank" rel="noopener noreferrer"><img height="40" alt="Sainsbury's PLC" src={sainsburysLogo}/></a>
-                    <a href="https://www.argos.co.uk" target="_blank" rel="noopener noreferrer" className="mar10Left"><img height="50" alt="Sainsbury's PLC" src={argosLogo}/></a>
+                    <a href="https://www.sainsburys.co.uk" target="_blank" rel="noopener noreferrer"><img height="30" alt="Sainsbury's PLC" src={sainsburysLogo}/></a>
+                    <a href="https://www.argos.co.uk" target="_blank" rel="noopener noreferrer" className="mar10Left"><img height="30" alt="Sainsbury's PLC" src={argosLogo}/></a>
                     <h3 className="title">Sainsbury's / Argos</h3>
                     <p className="bolder sizeSmall">Mar 2019 - Present • Contract Position • Product Designer / UI Developer</p>
                     <p className="desc">
@@ -23,7 +23,7 @@ export default function ResumeExperience(props) {
                     </p>
                 </li>
                 <li>
-                    <img height="50" alt="Semantic Integration" src={semanticIntegrationLogo}/>
+                    <img height="30" alt="Semantic Integration" src={semanticIntegrationLogo}/>
                     <h3 className="title">Semantic Integration</h3>
                     <p className="bolder sizeSmall">Jan 2019 - Feb 2019 • Contract Position • Lead UX/UI Designer</p>
                     <p className="desc">
