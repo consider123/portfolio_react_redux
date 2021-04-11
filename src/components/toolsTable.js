@@ -26,14 +26,14 @@ export default function ToolsTable({toolsList}) {
                     
                 </ul>
             </Col>
-            <Col xs="4" className="skills-col dev-col noPad">
+            <Col xs="4" className="skills-col ui-col noPad">
                 <div className="skills-header">
-                    <img alt="FED" src={fedIcon} />
-                    <h3>FED</h3>
+                    <img alt="UI" src={uiIcon} />
+                    <h3>UI</h3>
                 </div>
                 <hr />
                 <ul className="tools-list">
-                    { toolsList.dev.map(item => {
+                    { toolsList.ui.map(item => {
                         return (
                             <li key={item.caption} className={item.expert?null:"small"}>
                                 <div ><img alt={item.caption} src={item.image}/></div>  
@@ -44,14 +44,14 @@ export default function ToolsTable({toolsList}) {
                     
                 </ul>
             </Col>
-            <Col xs="4" className="skills-col ui-col noPad">
+            <Col xs="4" className="skills-col dev-col noPad">
                 <div className="skills-header">
-                    <img alt="UI" src={uiIcon} />
-                    <h3>UI</h3>
+                    <img alt="FED" src={fedIcon} />
+                    <h3>FED</h3>
                 </div>
                 <hr />
                 <ul className="tools-list">
-                    { toolsList.ui.map(item => {
+                    { toolsList.dev.map(item => {
                         return (
                             <li key={item.caption} className={item.expert?null:"small"}>
                                 <div ><img alt={item.caption} src={item.image}/></div>  

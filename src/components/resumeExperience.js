@@ -1,4 +1,7 @@
 import React from 'react';
+import sainsburysLogo from '../images/logos/sainsburys.png';
+import argosLogo from '../images/logos/argos.png';
+import semanticIntegrationLogo from '../images/logos/si.png';
 import affinionLogo from '../images/logos/affinion.png';
 import superdrugLogo from '../images/logos/superdrug.png';
 import coralLogo from '../images/logos/coral.png';
@@ -11,10 +14,28 @@ export default function ResumeExperience(props) {
             {/* <p>Below are some of the places where I've rendered my services as a contrator as well as a permanent employee.</p> */}
             <ul className="experience-list">
                 <li>
+                    <a href="https://www.sainsburys.co.uk" target="_blank" rel="noopener noreferrer"><img height="40" alt="Sainsbury's PLC" src={sainsburysLogo}/></a>
+                    <a href="https://www.argos.co.uk" target="_blank" rel="noopener noreferrer" className="mar10Left"><img height="50" alt="Sainsbury's PLC" src={argosLogo}/></a>
+                    <h3 className="title">Sainsbury's / Argos</h3>
+                    <p className="bolder sizeSmall">Mar 2019 - Present • Contract Position • Product Designer / UI Developer</p>
+                    <p className="desc">
+                        Sainsburys / Argos group is UK's leading retail entity well known to each household. Im working as sole UX/UI designer on an internally used Application which enables agents at call centre to carry out operations facilitating end customers. My Responsibilites consist of carrying out user research along with business requirement gathering and producing prototypes showing an optimised user experience and business value and also providing a first class support on the front end needs working with the dev team on the stack which involves React JS, Typescript, Redux and taking the ownership of components and assets in Storybook js. Working closely with Product Owners and BAs and with dev knowledge pointing out the build feasibility and potential dev problems early on.
+                    </p>
+                </li>
+                <li>
+                    <img height="50" alt="Semantic Integration" src={semanticIntegrationLogo}/>
+                    <h3 className="title">Semantic Integration</h3>
+                    <p className="bolder sizeSmall">Jan 2019 - Feb 2019 • Contract Position • Lead UX/UI Designer</p>
+                    <p className="desc">
+                        Semantic Integration is a Data-driven Solutions and Consulting agency working with high end clients like Pearson. I was hired for a very short UX project at Pearson working on their internal app which facilitates asset management. I conducted user reaseach and proposed solution through wireframes and highly interactive prototypes built in Axure RP, conducted user testing sessions and provided an highly optimised solution which fit user needs and business requirements.
+                    </p>
+                </li>
+                <li>
                     <a href="https://www.affinioninternational.com" target="_blank" rel="noopener noreferrer"><img height="50" alt="Affinion International Ltd" src={affinionLogo}/></a>
                     <h3 className="title">Affinion International</h3>
-                    <p className="bolder sizeSmall">Jul 2014 - Nov 2018 • Contract Position • Lead Front-End Developer/ UI-UX Designer</p>
-                    <p className="desc">Affinion International is an affilate marketing company mainly running loyalty and customer engagement programs with some industry leading clients. At Affinion international I was leading on most of the front end dev projects, coding the front end part using the modern web building technologies and frameworks, working with Rest APIs and state management tools, building high end interactive clickthrough prototypes and also giving support on the UX strategies and visual creatives. Mainly worked on building Loyalty programs platform customised for Banking sector, using technologies like React JS and Angular etc.</p>
+                    <p className="bolder sizeSmall">Jul 2014 - Nov 2018 • Contract Position • LeadUI-UX Designer / Front-End Developer </p>
+                    <p className="desc">Affinion International is an affilate marketing company mainly running loyalty and customer engagement programs with some industry leading clients. At Affinion international I was leading on most of the fintech projects, working on the UX strategies and visual creatives, building high end interactive clickthrough prototypes, providing polished pixel perfect UIs and also mentoring junior designers. 
+                    On the dev side, coding the front end part using the modern web building technologies and frameworks, working with Rest APIs and state management tools.</p>
                 </li>
                 <li>
                     <a href="https://www.superdrug.com" target="_blank" rel="noopener noreferrer"><img height="30" alt="Superdrug" src={superdrugLogo}/></a>

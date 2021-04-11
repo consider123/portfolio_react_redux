@@ -31,6 +31,7 @@ import react from './images/tools/react.png';
 import redux from './images/tools/redux.png';
 import sass from './images/tools/sass.png';
 import sketch from './images/tools/sketch.png';
+import storybook from './images/tools/storybook.png';
 import ts from './images/tools/typescript.png';
 import uxpin from './images/tools/uxpin.png';
 import vue from './images/tools/vue.png';
@@ -73,6 +74,7 @@ export {
     redux,
     sass,
     sketch,
+    storybook,
     ts,
     uxpin,
     vue,

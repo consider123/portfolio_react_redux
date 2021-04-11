@@ -7,7 +7,7 @@ import {
     // angular,
     axure,
     balsmiq,
-    bootstrap,
+    // bootstrap,
     // bulma,
     // css,
     // es,
@@ -32,6 +32,7 @@ import {
     redux,
     sass,
     sketch,
+    storybook,
     ts,
     uxpin,
     // webpack,
@@ -50,9 +51,9 @@ const toolsList = {
         {caption:"Typescript", image: ts, expert: false},
         // {caption:"Mobx", image: mobx, expert: true},
         // {caption:"ES6/7", image: es, expert: true},
+        {caption:"Storybook", image: storybook, expert: true},
         {caption:"Javascript", image: js, expert: true},
         {caption:"jQuery", image: jquery, expert: true},
-        {caption:"Bootstrap", image: bootstrap, expert: true},
         // {caption:"Angular", image: angular, expert: false},
         // {caption:"HTML", image: html, expert: true},
         // {caption:"CSS", image: css, expert: true},
@@ -99,12 +100,13 @@ export default function ResumeSkills(props) {
                     <ul className="custom">
                         <li>Rapid modeling</li>
                         <li>User flows</li>
+                        <li>Journey Mapping</li>
                         <li>Wireframing</li>
                         <li>Accessibility design</li>
                     </ul>
                 </Col>
                 <Col sm="6" lg="3">
-                    <h3 className="highlightColor clr">Design</h3>
+                    <h3 className="highlightColor clr">Visual Design</h3>
                     <ul className="custom">
                         <li>User Interface design</li>
                         <li>Layout and composition</li>
@@ -116,8 +118,8 @@ export default function ResumeSkills(props) {
                 <Col sm="6" lg="3">
                     <h3 className="highlightColor clr">Development</h3>
                     <ul className="custom">
-                        <li>System setup and design</li>
                         <li>Front-End (HTML / CSS / Javascript)</li>
+                        <li>Unit Testing</li>
                         <li>Performance optimization</li>
                         <li>WCAG compliance</li>
                         <li>Analytics</li>
@@ -129,6 +131,7 @@ export default function ResumeSkills(props) {
                     <ul className="custom">
                         <li>Creative Research</li>
                         <li>Technical analysis</li>
+                        <li>Usability Testing</li>
                         <li>Project planning</li>
                         <li>Project management</li>
                     </ul>
@@ -137,7 +140,7 @@ export default function ResumeSkills(props) {
             
             <hr />
                 
-            <p>I use the following tools/libraries/frameworks/softwares to aid the processes for <b>Front-end Development(FED)</b>, <b>User Interface Design(UI)</b> and <b>User Expereince(UX)</b> to build beautiful and useful visual interfaces.</p>
+            <p>I use the following tools/libraries/frameworks/softwares to aid the processes for <b>User Expereince(UX)</b>, <b>User Interface Design(UI)</b> and <b>Front-end Development(FED)</b> to build beautiful and useful visual interfaces.</p>
             <div className="cols-wrapper">
                 <ToolsTable toolsList={toolsList}/>
             </div>
