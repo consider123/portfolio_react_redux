@@ -15,24 +15,24 @@ import titleImageMobile from '../images/showcase_vectors_mobile.png';
 
 let tabsOffset;
 class Showcase extends Component {
-    
+
     onTabChange(i, value, tab, ev) {
         // console.log(arguments);
     }
-    
+
     onTabActive(tab) {
         // console.log(this.props);
-        tabsOffset = offset(document.querySelector('.tabs')).top-90;
-        if(this.props.sticky) document.body.scrollTop = document.documentElement.scrollTop = tabsOffset;
+        tabsOffset = offset(document.querySelector('.tabs')).top - 90;
+        if (this.props.sticky) document.body.scrollTop = document.documentElement.scrollTop = tabsOffset;
 
     }
 
     handleThumbClick(id) {
         this.props.showDetails(id);
     }
-    
+
     render() {
-        
+
         return (
             <React.Fragment>
                 <div className="section-sep showcase-sep">
@@ -53,41 +53,41 @@ class Showcase extends Component {
                             </Col>
                         </Row>
 
-                        <p className="textCenter marTop marBottomTwice">Some of the examples of my recent work across the 3 diciplines can be seen below</p>
+                        <p className="textCenter marTop marBottomTwice">Some of the examples of my recent work across the 3 disciplines can be seen below</p>
 
                         <Tabs className="tabs marTopTwice" onChange={this.onTabChange} defaultSelectedIndex={1} justified={true}>
                             {this.props.tabs.map((tab, i) => (
-                                <Tab key={i} value={`pane-${i+1}`} label={tab.caption} onActive={this.onTabActive.bind(this)}>
-                                <Row className="thumbs">
-                                    {tab.projects.map((item, j) => (
-                                        <Col key={j} xs="12" md="6" className="showcase-thumb marTop marBottom hvr-bob">
-                                            <div className="thumb-wrapper">
-                                                <img className="fullWidth" alt={item.title} src={item.thumb} />
-                                                <div className="overlay">
-                                                    <div className="content">
-                                                        <h2>{item.title}</h2>
-                                                        <p>{item.shortDesc}</p>
-                                                        <p>{item.tools}</p>
-                                                        
-                                                        <div className="industry">
-                                                        <span>Industry:&nbsp;</span>
-                                                        <ul className="sectors">
-                                                            {item.industry.map((sector, k) => {
-                                                                return (
-                                                                    <li key={k}>{sector}</li>
-                                                                )
-                                                            })}
-                                                        </ul>
+                                <Tab key={i} value={`pane-${i + 1}`} label={tab.caption} onActive={this.onTabActive.bind(this)}>
+                                    <Row className="thumbs">
+                                        {tab.projects.map((item, j) => (
+                                            <Col key={j} xs="12" md="6" className="showcase-thumb marTop marBottom hvr-bob">
+                                                <div className="thumb-wrapper">
+                                                    <img className="fullWidth" alt={item.title} src={item.thumb} />
+                                                    <div className="overlay">
+                                                        <div className="content">
+                                                            <h2>{item.title}</h2>
+                                                            <p>{item.shortDesc}</p>
+                                                            <p>{item.tools}</p>
+
+                                                            <div className="industry">
+                                                                <span>Industry:&nbsp;</span>
+                                                                <ul className="sectors">
+                                                                    {item.industry.map((sector, k) => {
+                                                                        return (
+                                                                            <li key={k}>{sector}</li>
+                                                                        )
+                                                                    })}
+                                                                </ul>
+                                                            </div>
+
+                                                            <button id={item.id} onClick={() => this.handleThumbClick(item.id)}>view details</button>
                                                         </div>
-                                                        
-                                                        <button id={item.id} onClick={() => this.handleThumbClick(item.id)}>view details</button>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </Col>    
-                                    ))}
-                                    
-                                </Row>
+                                            </Col>
+                                        ))}
+
+                                    </Row>
                                 </Tab>
                             ))}
                         </Tabs>
@@ -104,7 +104,7 @@ class Showcase extends Component {
 }
 
 const mapStateToProps = (state) => {
-    return { tabs:state.tabs, sticky:state.sticky.showcase, clickedThumb:state.clickedThumb }
+    return { tabs: state.tabs, sticky: state.sticky.showcase, clickedThumb: state.clickedThumb }
 }
 
 const mapDispatchToProps = (dispatch) => {
@@ -119,5 +119,5 @@ Showcase.propTypes = {
     clickedThumb: PropTypes.object,
     showDetails: PropTypes.func
 }
-  
-export default connect(mapStateToProps,mapDispatchToProps)(Showcase);
+
+export default connect(mapStateToProps, mapDispatchToProps)(Showcase);

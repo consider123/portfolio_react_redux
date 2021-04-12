@@ -6,14 +6,14 @@ import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
 import logo from '../images/logos/mastercard.png';
 import primaryImage from '../images/details-images/primary/accolade.png';
 // import reactLogo from '../images/tools/React-icon.svg';
-import {illustrator, photoshop} from '../config';
+import { illustrator, photoshop } from '../config';
 
 jss.setup(preset());
 
@@ -24,7 +24,7 @@ const styles = {
     }
 }
 
-const {classes} = jss.createStyleSheet(styles).attach();
+const { classes } = jss.createStyleSheet(styles).attach();
 
 
 export const AccoladeUi = (props) => {
@@ -57,8 +57,8 @@ export const AccoladeUi = (props) => {
     ];
 
     const toolsList = [
-        {caption:"Illustrator", image: illustrator, supportingCap:null},
-        {caption:"Photoshop", image: photoshop, supportingCap:null}
+        { caption: "Illustrator", image: illustrator, supportingCap: null },
+        { caption: "Photoshop", image: photoshop, supportingCap: null }
     ]
 
     return (
@@ -66,12 +66,12 @@ export const AccoladeUi = (props) => {
             <Container>
                 <Row>
                     <Col xs="12">
-                        <div className="logo"><img alt="Mastercard" src={logo}/></div>
+                        <div className="logo"><img alt="Mastercard" src={logo} /></div>
                         <h1 className="title">Accolade Bank Benefits Hub</h1>
-                        <h3>Accolade bank is a white-label product and part of Mastercard Benefits Optimizer (MBO) program. The MBO platform gives millions of Mastercard customers acess to custom designed loyalty products. The objective is to develop a generic web-interface running on a plug-and-play platform to sell to third-party banks.</h3>
-                        
+                        <h3>Accolade bank is a white-label product and part of Mastercard Benefits Optimizer (MBO) program. The MBO platform gives millions of Mastercard customers access to custom designed loyalty products. The objective is to develop a generic web-interface running on a plug-and-play platform to sell to third-party banks.</h3>
+
                         <ul className="sectors">
-                            { props.industry ? 
+                            {props.industry ?
                                 props.industry.map((sector, i) => <li key={i}>{sector}</li>) : null
                             }
                         </ul>
@@ -79,10 +79,10 @@ export const AccoladeUi = (props) => {
                     </Col>
                 </Row>
             </Container>
-                    
+
             <div className={`grad ${classes.grad}`}>
                 <Container className="textCenter">
-                    <img className="primary" alt="Accolade Bank Benefits Hub" src={primaryImage}/>
+                    <img className="primary" alt="Accolade Bank Benefits Hub" src={primaryImage} />
                 </Container>
             </div>
 
@@ -91,15 +91,15 @@ export const AccoladeUi = (props) => {
                     <Col sm="5" lg="4">
                         <h2>Tools Used</h2>
                         <ul className="tools-list noBullet noMargin noPad marBottomTwice">
-                            { toolsList.map(item => {
+                            {toolsList.map(item => {
                                 return (
                                     <li key={item.caption}>
-                                        <div className="mar10Right"><img alt={item.caption} src={item.image}/></div>  
-                                        <div>{item.caption} {item.supportingCap?<span className="sizeNormal">{item.supportingCap}</span>:null}</div>
+                                        <div className="mar10Right"><img alt={item.caption} src={item.image} /></div>
+                                        <div>{item.caption} {item.supportingCap ? <span className="sizeNormal">{item.supportingCap}</span> : null}</div>
                                     </li>
                                 )
-                            }) }
-                            
+                            })}
+
                         </ul>
                     </Col>
                     <Col sm="7" lg="8">
@@ -114,19 +114,19 @@ export const AccoladeUi = (props) => {
                     </Col>
                     <Col xs="12">
                         <h2 className="noMargin marTopTwice">Screens</h2> <p className="sizeSmall">(Please click on the slide image to view the full version of the image)</p>
-                       
+
                         <div className={`slider-wrapper ${classes.grad}`}>
                             <Slider {...settings}>
                                 {sliderImages.map(item => {
                                     return (
                                         <div key={item} className="slide">
-                                            <a 
-                                                href={`${sliderImagesPath}${item}`} 
-                                                target="_blank" 
+                                            <a
+                                                href={`${sliderImagesPath}${item}`}
+                                                target="_blank"
                                                 rel="noopener noreferrer">
-                                                <img 
-                                                    src={`${sliderImagesPath}${item}`} 
-                                                    alt='Accolade Bank Benefits Hub' 
+                                                <img
+                                                    src={`${sliderImagesPath}${item}`}
+                                                    alt='Accolade Bank Benefits Hub'
                                                 />
                                             </a>
                                         </div>
@@ -138,7 +138,7 @@ export const AccoladeUi = (props) => {
                     </Col>
                 </Row>
             </Container>
-                    
+
         </React.Fragment>
     )
 }

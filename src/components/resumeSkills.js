@@ -43,17 +43,17 @@ import {
 } from '../config';
 
 const toolsList = {
-    dev:[
-        {caption:"HTML/CSS", image: htmlcss, expert: true},
-        {caption:"Sass", image: sass, expert: true},
-        {caption:"React", image: react, expert: true},
-        {caption:"Redux", image: redux, expert: true},
-        {caption:"Typescript", image: ts, expert: false},
+    dev: [
+        { caption: "HTML/CSS", image: htmlcss, expert: true },
+        { caption: "Sass", image: sass, expert: true },
+        { caption: "React", image: react, expert: true },
+        { caption: "Redux", image: redux, expert: true },
+        { caption: "Typescript", image: ts, expert: false },
         // {caption:"Mobx", image: mobx, expert: true},
         // {caption:"ES6/7", image: es, expert: true},
-        {caption:"Storybook", image: storybook, expert: true},
-        {caption:"Javascript", image: js, expert: true},
-        {caption:"jQuery", image: jquery, expert: true},
+        { caption: "Storybook", image: storybook, expert: true },
+        { caption: "Javascript", image: js, expert: true },
+        { caption: "jQuery", image: jquery, expert: true },
         // {caption:"Angular", image: angular, expert: false},
         // {caption:"HTML", image: html, expert: true},
         // {caption:"CSS", image: css, expert: true},
@@ -65,27 +65,27 @@ const toolsList = {
         // {caption:"Yarn", image: yarn, expert: true},
         // {caption:"Gulp", image: gulp, expert: true},
         // {caption:"Webpack", image: webpack, expert: false},
-        {caption:"Git", image: git, expert: true}
+        { caption: "Git", image: git, expert: true }
     ],
-    ui:[
-        {caption:"Figma", image: figma, expert: false},
-        {caption:"Sketch", image: sketch, expert: true},
-        {caption:"XD", image: xd, expert: true},
-        {caption:"Illustrator", image: ai, expert: true},
-        {caption:"Photoshop", image: photoshop, expert: true},
-        {caption:"Zeplin", image: zeplin, expert: true},
-        {caption:"Invision", image: invision, expert: true}
+    ui: [
+        { caption: "Figma", image: figma, expert: false },
+        { caption: "Sketch", image: sketch, expert: true },
+        { caption: "XD", image: xd, expert: true },
+        { caption: "Illustrator", image: ai, expert: true },
+        { caption: "Photoshop", image: photoshop, expert: true },
+        { caption: "Zeplin", image: zeplin, expert: true },
+        { caption: "Invision", image: invision, expert: true }
     ],
-    ux:[
-        {caption:"Figma", image: figma, expert: false},
-        {caption:"Axure RP", image: axure, expert: true},
-        {caption:"UX Pin", image: uxpin, expert: true},
-        {caption:"XD", image: xd, expert: true},
-        {caption:"Balsmiq", image: balsmiq, expert: false},
+    ux: [
+        { caption: "Figma", image: figma, expert: false },
+        { caption: "Axure RP", image: axure, expert: true },
+        { caption: "UX Pin", image: uxpin, expert: true },
+        { caption: "XD", image: xd, expert: true },
+        { caption: "Balsmiq", image: balsmiq, expert: false },
         // {caption:"Flinto", image: flinto, expert: false},
         // {caption:"Principle", image: principle, expert: false},
-        {caption:"Whiteboard", image: whiteboard, expert: true},
-        {caption:"Pen/Paper", image: penpaper, expert: true}
+        { caption: "Whiteboard", image: whiteboard, expert: true },
+        { caption: "Pen/Paper", image: penpaper, expert: true }
     ]
 }
 
@@ -137,14 +137,14 @@ export default function ResumeSkills(props) {
                     </ul>
                 </Col>
             </Row>
-            
+
             <hr />
-                
-            <p>I use the following tools/libraries/frameworks/softwares to aid the processes for <b>User Expereince(UX)</b>, <b>User Interface Design(UI)</b> and <b>Front-end Development(FED)</b> to build beautiful and useful visual interfaces.</p>
+
+            <p>I use the following tools/libraries/frameworks/softwares to aid the processes for <b>User Experience(UX)</b>, <b>User Interface Design(UI)</b> and <b>Front-end Development(FED)</b> to build beautiful and useful visual interfaces.</p>
             <div className="cols-wrapper">
-                <ToolsTable toolsList={toolsList}/>
+                <ToolsTable toolsList={toolsList} />
             </div>
-            
+
         </React.Fragment>
     );
 }
